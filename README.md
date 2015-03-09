@@ -1,4 +1,4 @@
-Automated GPU-accelerated hashcat cracking in the cloud
+Automated GPU-accelerated hashcat cracking on AWS
 ====
 
 Purpose
