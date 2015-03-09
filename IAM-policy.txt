@@ -1,0 +1,32 @@
+# You'll want to tweak this to suit your needs/environment
+# My bucket is cudahashcat, you'll want to replace with your own
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1425695146000",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::cudahashcat/incoming/*"
+      ]
+    },
+    {
+      "Sid": "Stmt1425695146001",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::cudahashcat/assets/*"
+      ]
+    },
+    {    
+      "Effect": "Allow",
+      "Action": [ "ec2:DescribeTags", "ec2:DescribeInstances"],
+      "Resource": ["*"]
+    }
+  ]
+}
