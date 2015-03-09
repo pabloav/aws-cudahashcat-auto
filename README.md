@@ -14,6 +14,18 @@ The problem with GPU instances is that they're expensive. However on the spot ma
 
 Initially I just set out to see how far I could get automating a spin up of a node to crack a password. Eventually I'd like to enable parallelism for even faster cracking.
 
+Usage
+----
+#### Configuration
+You need to look at the both the _run.sh_ and _launch-spot.sh_ scripts and you'll want to change the settings to match your AWS details and hash details
+
+#### Performance
+For nitty gritty details you can see the benchmark linked above, but to give a sense of the real-world performance:
+
+- Runs all single Sha512 (unix crypt) hash against rockyou in ~21 minutes (~12000 H/s)
+
+Compared to my MBP which takes a couple of hours to do the same (~900 H/s)
+
 Overview
 --------
 There's two critical scripts involved.
