@@ -59,7 +59,3 @@ stuff "$cudahome/cudaHashcat64.bin $HASHCAT_ARGS $tmpdir/passwd.txt $HASHCAT_DIC
 EOH
 
 screen -d -m -c $tmpdir/screenrc
-
-# CREDITS:
-#   https://gist.github.com/jareware/d7a817a08e9eae51a7ea
-#   http://stackoverflow.com/questions/3883315/query-ec2-tags-from-within-instance
