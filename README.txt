@@ -45,7 +45,7 @@ To Do:
 * Bake AWS CLI into the AMI
 * Bake rockyou.txt into the AMI (?)
 * Provide some scripts to configure the IAM policy and S3 bucket
-* Maybe move more of the hardcoded confirm from run.sh to _spot instance request_ tags (e.g., s3bucket, s3folder)
+* Maybe move more of the hardcoded configuration from run.sh to _spot instance request_ tags (e.g., s3bucket, s3folder)
 
 Credits:
 - https://gist.github.com/jareware/d7a817a08e9eae51a7ea
